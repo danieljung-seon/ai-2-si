@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "AI → SI",
+  "version": "1.0.0",
+  "description": "Strikes through every \"AI\" on the page and puts a red \"SI\" next to it, matching the original casing.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
